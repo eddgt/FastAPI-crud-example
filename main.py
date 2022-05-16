@@ -48,7 +48,7 @@ def updateStudent(updatedStudent:Student, id:str):
     return "Estudiante no existe"
 
 @app.delete('/students/{id}')
-def updateStudent(id:str):
+def deleteStudent(id:str):
     for student in students:
         if student["id"] == id:
             students.remove(student)
